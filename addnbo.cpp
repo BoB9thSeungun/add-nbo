@@ -30,6 +30,9 @@ bool AddNbo(char *fileName1, char *fileName2)
 		uint32_t result = n1 + n2;
 
 		printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n", n1, n1, n2, n2, result, result);
+
+		fclose(file2);
+		fclose(file1);
 	}
 	catch(const std::exception &e)
 	{
